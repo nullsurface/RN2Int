@@ -17,6 +17,7 @@ int main() {
     char str13[] = "CXL";
     char str14[] = "DXIV";
     char str15[] = "MDXXXIV";
+    char str16[] = "MCMXCVI";
 
     printf("%d\n", romanToInt(str1));
     printf("%d\n", romanToInt(str2));
@@ -33,6 +34,7 @@ int main() {
     printf("%d\n", romanToInt(str13));
     printf("%d\n", romanToInt(str14));
     printf("%d\n", romanToInt(str15));
+    printf("%d\n", romanToInt(str16));
 
     return 0;
 }
