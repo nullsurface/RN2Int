@@ -41,19 +41,15 @@ Block getFirstBlock(char* str) {
     sub.len = 0;
 	for (int i = 0; i < 4; i++) {
         if (str[i] == '\0') {
-            printf("BLOCK SIZE: %d\n", sub.len);
 			return sub;
         } else {
-            if (valueOf(str[i]) < valueOf(str[i + 1]) && i != 0) {
-                printf("block size: %d\n", sub.len);
+            if (valueOf(str[i]) < valueOf(str[i + 1]) && i != 0) 
                 return sub;
-            }
 			sub.len++;
 			sub.chars[i] = str[i];
 		}
     }
 
-    printf("BLOCK SIZE: %d\n", sub.len);
 	return sub;
 }
 
